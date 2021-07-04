@@ -14,7 +14,7 @@ public class ItemCasedphone extends ItemPhone
 	{
 		super(registryName);
 	}
-	
+	//How do I do NBT color variants????
 	@Override
 	public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items)
 	{

@@ -1,8 +1,7 @@
 package com.Badadamadaba.badadevicesmod.blocks;
 
-import com.Badadamadaba.badadevicesmod.Main;
+import com.Badadamadaba.badadevicesmod.BadaDevicesMod;
 import com.Badadamadaba.badadevicesmod.init.ModBlocks;
-import com.Badadamadaba.badadevicesmod.init.ModItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -11,11 +10,9 @@ import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
@@ -144,7 +141,7 @@ public class computer extends BlockBase
 	@Override	
 	public void registerModels() 
 	{
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		BadaDevicesMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
 	}
 	
 }

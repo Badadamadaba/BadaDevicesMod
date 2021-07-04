@@ -6,7 +6,7 @@ public class FrameForGui {
 
     int x, y, width, height;
 
-    public FrameForGui(Category category, x, int y){
+    public FrameForGui(Category category, int x, int y){
         this.x = x;
         this.y = y;
         this.width = 100;

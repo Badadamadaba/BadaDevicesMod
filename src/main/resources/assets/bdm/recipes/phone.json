@@ -4,7 +4,7 @@
     "pattern":
     [
         "GGG",
-        "ODP",
+        "OEP",
         "RRB"
     ],
     
@@ -35,9 +35,9 @@
             "item": "minecraft:stone_button"
         },
         
-        "D":
+        "E":
         {
-            "item": "minecraft:diamond"
+            "item": "minecraft:ender_eye"
         }
 
     },

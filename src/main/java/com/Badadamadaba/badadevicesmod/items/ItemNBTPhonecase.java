@@ -1,17 +1,13 @@
 package com.Badadamadaba.badadevicesmod.items;
 
-import com.Badadamadaba.badadevicesmod.Main;
-import com.Badadamadaba.badadevicesmod.init.ModItems;
+import com.Badadamadaba.badadevicesmod.BadaDevicesMod;
 import com.Badadamadaba.badadevicesmod.util.PhonecaseUtil;
 
-import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
 import net.minecraft.util.NonNullList;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ItemNBTPhonecase extends Item
 {
@@ -20,7 +16,7 @@ public class ItemNBTPhonecase extends Item
 	{
 		setRegistryName("phonecase");
 		setUnlocalizedName("itemphonecase");
-		setCreativeTab(Main.BADADEVICESMODTAB);
+		setCreativeTab(BadaDevicesMod.BADADEVICESMODTAB);
 		setHasSubtypes(false);
 		this.setMaxStackSize(1);
 	}

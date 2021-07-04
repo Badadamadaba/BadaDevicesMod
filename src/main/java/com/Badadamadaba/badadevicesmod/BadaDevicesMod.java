@@ -1,6 +1,7 @@
 package com.Badadamadaba.badadevicesmod;
 
 import com.Badadamadaba.badadevicesmod.init.ModRecipes;
+import com.Badadamadaba.badadevicesmod.inventory.GuiHandler;
 import com.Badadamadaba.badadevicesmod.proxy.CommonProxy;
 import com.Badadamadaba.badadevicesmod.tabs.BDMTab;
 import com.Badadamadaba.badadevicesmod.util.Reference;
@@ -15,10 +16,10 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
-public class Main {
+public class BadaDevicesMod {
 	
 	@Instance
-	public static Main instance;
+	public static BadaDevicesMod instance;
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
 	public static CommonProxy proxy;
@@ -33,6 +34,7 @@ public class Main {
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
+		GuiHandler.init();
 		ModRecipes.init();
 	}
 	@EventHandler
