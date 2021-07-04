@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " PI",
+        "PIP",
+        "IP "
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "bdm:plastic_sheet"
+        },
+        
+        "I":
+        {
+            "item": "minecraft:iron_ingot"
+        }
+        
+    },
+    
+    "result":
+    {
+        "item": "bdm:wire",
+        "count": 2
+    }
+}

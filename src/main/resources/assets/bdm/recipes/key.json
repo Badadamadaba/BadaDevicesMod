@@ -1,0 +1,21 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "bdm:plastic_sheet"
+    },
+    {
+      "item": "minecraft:shears"
+    }
+    
+    ],
+
+    "result": 
+    {
+        "item": "bdm:key",
+        "count": 3
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "KKK",
+        "PBP",
+        "PWP"
+    ],
+    
+    "key":
+    {
+        "W":
+        {
+            "item": "bdm:wire"
+        },
+        
+        "K":
+        {
+            "item": "bdm:key"
+        },
+        
+        "B":
+        {
+            "item": "minecraft:light_weighted_pressure_plate"
+        },
+        
+        "P":
+        {
+            "item": "bdm:plastic_sheet"
+        }
+
+    },
+    
+    "result":
+    {
+        "item": "bdm:keyboard",
+        "count": 1
+    }
+}

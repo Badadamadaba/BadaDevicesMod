@@ -1,0 +1,50 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "GGG",
+        "ODP",
+        "RRB"
+    ],
+    
+    "key":
+    {
+        "G":
+        {
+            "item": "minecraft:glowstone_dust"
+        },
+        
+        "R":
+        {
+            "item": "minecraft:redstone"
+        },
+        
+        "O":
+        {
+            "item": "minecraft:obsidian"
+        },
+        
+        "P":
+        {
+            "item": "minecraft:glass_pane"
+        },
+        
+        "B":
+        {
+            "item": "minecraft:stone_button"
+        },
+        
+        "D":
+        {
+            "item": "minecraft:diamond"
+        }
+
+    },
+    
+    "result":
+    {
+        "item": "bdm:phone",
+        "count": 1
+    }
+}

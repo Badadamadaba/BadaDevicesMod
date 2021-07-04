@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "MBM",
+        "MWM",
+        "MRM"
+    ],
+    
+    "key":
+    {
+        "W":
+        {
+            "item": "bdm:wire"
+        },
+        
+        "R":
+        {
+            "item": "minecraft:redstone"
+        },
+        
+        "B":
+        {
+            "item": "minecraft:stone_button"
+        },
+        
+        "M":
+        {
+            "item": "bdm:metal_sheet"
+        }
+
+    },
+    
+    "result":
+    {
+        "item": "bdm:computer",
+        "count": 1
+    }
+}

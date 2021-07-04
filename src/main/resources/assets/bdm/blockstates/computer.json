@@ -1,0 +1,29 @@
+{
+    "variants": 
+    {
+        "facing=up": 
+        { 
+            "model": "bdm:computer" 
+        },
+    
+        "facing=north": 
+        { 
+            "model": "bdm:computer" 
+        },
+    
+        "facing=west": 
+        { 
+            "model": "bdm:computer","y":270 
+        },
+    
+        "facing=east": 
+        { 
+            "model": "bdm:computer","y":90 
+        },
+    
+        "facing=south": 
+        { 
+            "model": "bdm:computer","y":180 
+        }
+    }
+}

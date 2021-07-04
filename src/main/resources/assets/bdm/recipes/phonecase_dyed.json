@@ -1,0 +1,28 @@
+{
+    "type": "bdm:phonecase_dye",
+    
+    "pattern":
+    [
+        "PD"
+    ],
+    
+    "key":
+    {
+        "D":
+        {
+            "item": "minecraft:dye",
+            "data": 0
+        },
+        
+        "P":
+        {
+            "item": "bdm:phonecase"
+        }
+    },
+    
+    "result":
+    {
+        "item": "bdm:phonecase",
+        "count": 1
+    }
+}

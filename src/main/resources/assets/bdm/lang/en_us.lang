@@ -1,0 +1,49 @@
+
+//Items
+item.wire.name=Wire
+item.key.name=Key
+item.metal_sheet.name=Metal sheet
+item.plastic_sheet.name=Plastic sheet
+item.phone.name=Phone
+item.casedphone.white.name=White Phone
+item.casedphone.silver.name=Silver Phone
+item.casedphone.gray.name=Gray Phone
+item.casedphone.black.name=Black Phone
+item.casedphone.pink.name=Pink Phone
+item.casedphone.red.name=Red Phone
+item.casedphone.brown.name=Brown Phone
+item.casedphone.orange.name=Orange Phone
+item.casedphone.yellow.name=Yellow Phone
+item.casedphone.lime.name=Lime Phone
+item.casedphone.green.name=Green Phone
+item.casedphone.cyan.name=Cyan Phone
+item.casedphone.light_blue.name=Light Blue Phone
+item.casedphone.blue.name=Blue Phone
+item.casedphone.purple.name=Purple Phone
+item.casedphone.magenta.name=Magenta Phone
+item.itemphonecase.white.name=White Phone Case
+item.itemphonecase.silver.name=Silver Phone Case
+item.itemphonecase.gray.name=Gray Phone Case
+item.itemphonecase.black.name=Black Phone Case
+item.itemphonecase.pink.name=Pink Phone Case
+item.itemphonecase.red.name=Red Phone Case
+item.itemphonecase.brown.name=Brown Phone Case
+item.itemphonecase.orange.name=Orange Phone Case
+item.itemphonecase.yellow.name=Yellow Phone Case
+item.itemphonecase.lime.name=Lime Phone Case
+item.itemphonecase.green.name=Green Phone Case
+item.itemphonecase.cyan.name=Cyan Phone Case
+item.itemphonecase.blue.name=Blue Phone Case
+item.itemphonecase.light_blue.name=Light Blue Phone Case
+item.itemphonecase.purple.name=Purple Phone Case
+item.itemphonecase.magenta.name=Magenta Phone Case
+item.monitor_screen.name=Monitor Screen
+item.keyboard.name=Keyboard
+item.mouse.name=Computer Mouse
+
+//Blocks
+tile.computer.name=Computer
+tile.server.name=Server
+
+//Tabs
+itemGroup.badadevicesmodtab=Bada Devices Mod

@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "WWW",
+        " BP",
+        " OB"
+    ],
+    
+    "key":
+    {
+        "W":
+        {
+            "item": "bdm:wire"
+        },
+        
+        "O":
+        {
+            "item": "minecraft:observer"
+        },
+        
+        "B":
+        {
+            "item": "minecraft:stone_button"
+        },
+        
+        "P":
+        {
+            "item": "bdm:plastic_sheet"
+        }
+
+    },
+    
+    "result":
+    {
+        "item": "bdm:mouse",
+        "count": 1
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "WHW",
+        "HPH",
+        " S "
+    ],
+    
+    "key":
+    {
+        "H":
+        {
+            "item": "bdm:plastic_sheet"
+        },
+        
+        "W":
+        {
+            "item": "bdm:wire"
+        },
+        
+        "S":
+        {
+            "item": "minecraft:stick"
+        },
+        
+        "P":
+        {
+            "item": "minecraft:glass_pane"
+        }
+
+    },
+    
+    "result":
+    {
+        "item": "bdm:monitor_screen",
+        "count": 1
+    }
+}

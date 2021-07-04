@@ -1,0 +1,27 @@
+{
+    "type": "bdm:phonecase_apply",
+    
+    "pattern":
+    [
+        "PC"
+    ],
+    
+    "key":
+    {
+        "C":
+        {
+            "item": "bdm:phonecase"
+        },
+        
+        "P":
+        {
+            "item": "bdm:phone"
+        }
+    },
+    
+    "result":
+    {
+        "item": "bdm:casedphone",
+        "count": 1
+    }
+}
