@@ -1,10 +1,11 @@
 package com.Badadamadaba.badadevicesmod.proxy;
 
-import net.minecraft.item.Item;
+import com.Badadamadaba.badadevicesmod.init.ModItems;
+import net.minecraftforge.common.MinecraftForge;
 
 public class CommonProxy
 {
-	public void registerItemRenderer(Item item, int meta, String id) {
-		
+	public void preInit(){
+		MinecraftForge.EVENT_BUS.register(ModItems.class);
 	}
 }

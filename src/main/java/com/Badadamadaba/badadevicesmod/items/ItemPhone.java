@@ -2,7 +2,6 @@ package com.Badadamadaba.badadevicesmod.items;
 
 import com.Badadamadaba.badadevicesmod.BadaDevicesMod;
 
-import com.Badadamadaba.badadevicesmod.client.ClickGUIScreen;
 import com.Badadamadaba.badadevicesmod.inventory.GuiHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -23,8 +22,9 @@ public class ItemPhone extends ItemBase
 
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer player, EnumHand hand) {
-		if(!world.isRemote){
+		if(world.isRemote){
 			player.openGui(BadaDevicesMod.instance, GuiHandler.GuiDevice.PHONE.ordinal(), world, (int) player.posX, (int) player.posY, (int) player.posZ);
+			System.out.println("What the fuck");
 		}
 		return new ActionResult<>(EnumActionResult.SUCCESS, player.getHeldItem(hand));
 	}

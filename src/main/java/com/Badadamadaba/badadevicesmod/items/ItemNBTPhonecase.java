@@ -9,14 +9,12 @@ import net.minecraft.item.Item;
 import net.minecraft.util.NonNullList;
 import net.minecraft.item.ItemStack;
 
-public class ItemNBTPhonecase extends Item
+public class ItemNBTPhonecase extends ItemBase
 {
 
-	public ItemNBTPhonecase ( ) 
+	public ItemNBTPhonecase ()
 	{
-		setRegistryName("phonecase");
-		setUnlocalizedName("itemphonecase");
-		setCreativeTab(BadaDevicesMod.BADADEVICESMODTAB);
+		super("phonecase");
 		setHasSubtypes(false);
 		this.setMaxStackSize(1);
 	}

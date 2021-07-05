@@ -10,6 +10,7 @@ import com.Badadamadaba.badadevicesmod.items.ItemPhone;
 import com.Badadamadaba.badadevicesmod.util.Reference;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.util.NonNullList;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -17,33 +18,38 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class ModItems
 {
-
-	public static final List<Item> ITEMS = new ArrayList<Item>();
-	
-	
 	//Items
-	public static final Item WIRE = new ItemBase("wire");
-	public static final Item KEY = new ItemBase("key");
-	public static final Item METAL_SHEET = new ItemBase("metal_sheet");
-	public static final Item PLASTIC_SHEET= new ItemBase("plastic_sheet");
+	public static final ItemBase WIRE = new ItemBase("wire");
+	public static final ItemBase KEY = new ItemBase("key");
+	public static final ItemBase METAL_SHEET = new ItemBase("metal_sheet");
+	public static final ItemBase PLASTIC_SHEET= new ItemBase("plastic_sheet");
 	
-	public static final Item PHONE = new ItemPhone("phone");
-	public static final Item CASEDPHONE = new ItemCasedphone("casedphone");
-	public static final Item PHONECASE = new ItemNBTPhonecase();
+	public static final ItemBase PHONE = new ItemPhone("phone");
+	public static final ItemBase CASEDPHONE = new ItemCasedphone("casedphone");
+	public static final ItemBase PHONECASE = new ItemNBTPhonecase();
 	
-	public static final Item MONITOR_SCREEN = new ItemBase("monitor_screen");
-	public static final Item KEYBOARD = new ItemBase("keyboard");
-	public static final Item MOUSE = new ItemBase("mouse");
-	
-	@Mod.EventBusSubscriber(modid = Reference.MOD_ID)
-	public static class ItemRegistration
-	{
-		public static final NonNullList<Item> ITEMS = NonNullList.<Item>create();
-		
-		@SubscribeEvent
-		public static void registerItems(final RegistryEvent.Register<Item> event)
-		{
-			event.getRegistry().register(PHONECASE);
-		}
+	public static final ItemBase MONITOR_SCREEN = new ItemBase("monitor_screen");
+	public static final ItemBase KEYBOARD = new ItemBase("keyboard");
+	public static final ItemBase MOUSE = new ItemBase("mouse");
+
+	public static final Item COMPUTER = new ItemBlock(ModBlocks.COMPUTER);
+	public static final Item SERVER = new ItemBlock(ModBlocks.SERVER);
+
+	@SubscribeEvent
+	public static void registerItems(final RegistryEvent.Register<Item> event) {
+		//Items :sunglasso:
+		event.getRegistry().register(WIRE.setRegistryName());
+		event.getRegistry().register(KEY.setRegistryName());
+		event.getRegistry().register(METAL_SHEET.setRegistryName());
+		event.getRegistry().register(PLASTIC_SHEET.setRegistryName());
+		event.getRegistry().register(PHONE.setRegistryName());
+		event.getRegistry().register(CASEDPHONE.setRegistryName());
+		event.getRegistry().register(PHONECASE.setRegistryName());
+		event.getRegistry().register(MONITOR_SCREEN.setRegistryName());
+		event.getRegistry().register(KEYBOARD.setRegistryName());
+		event.getRegistry().register(MOUSE.setRegistryName());
+		//Blocks :pensive:
+		event.getRegistry().register(COMPUTER.setRegistryName(ModBlocks.COMPUTER.getRegistryName()));
+		event.getRegistry().register(SERVER.setRegistryName(ModBlocks.SERVER.getRegistryName()));
 	}
 }
