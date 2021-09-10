@@ -1,0 +1,7 @@
+{
+   "parent": "item/generated",
+   "textures": {
+       "layer0": "bdm:items/casedphone"
+   },
+  "cased=RED": ["bdm:items/casedphone_red"]
+}

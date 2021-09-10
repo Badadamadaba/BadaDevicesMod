@@ -1,6 +1,6 @@
 {
 	"recipes": {
-	"phonecase_dye": "com.Badadamadaba.badadevicesmod.recipes.PhonecaseDye$Factory",
-	"phonecase_apply": "com.Badadamadaba.badadevicesmod.recipes.CasedphoneApply$Factory"
+	"phonecase_dye": "com.Badadamadaba.bdm.recipes.PhonecaseDye$Factory",
+	"phonecase_apply": "com.Badadamadaba.bdm.recipes.CasedphoneApply$Factory"
 		   }
 }

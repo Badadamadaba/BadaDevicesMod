@@ -1,5 +1,5 @@
 
-//Items
+#Items
 item.wire.name=Wire
 item.key.name=Key
 item.metal_sheet.name=Metal sheet
@@ -41,9 +41,9 @@ item.monitor_screen.name=Monitor Screen
 item.keyboard.name=Keyboard
 item.mouse.name=Computer Mouse
 
-//Blocks
+#Blocks
 tile.computer.name=Computer
 tile.server.name=Server
 
-//Tabs
-itemGroup.badadevicesmodtab=Bada Devices Mod
+#Tabs
+itemGroup.bdmtab=Bada Devices Mod
