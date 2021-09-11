@@ -1,11 +1,12 @@
 package com.Badadamadaba.bdm.blocks;
 
+import com.Badadamadaba.bdm.BadaDevicesMod;
 import com.Badadamadaba.bdm.init.ModBlocks;
 
-import com.Badadamadaba.bdm.proxy.ClientProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -20,19 +21,19 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class Computer extends BlockBase
+public class computer extends BlockBase
 {
-	public static final AxisAlignedBB COMPUTER_N = new AxisAlignedBB(0.0D, 0.0D, 1.0D, 1.0D, 0.25D, 0.0D);
-    public static final AxisAlignedBB COMPUTER_E = new AxisAlignedBB(1.0D, 0.0D, 0.0D, 0.0D, 0.25D, 1.0D);
-    public static final AxisAlignedBB COMPUTER_W = new AxisAlignedBB(1.0D, 0.0D, 0.0D, 0.0D, 0.25D, 1.0D);
-    public static final AxisAlignedBB COMPUTER_S = new AxisAlignedBB(0.0D, 0.0D, 1.0D, 1.0D, 0.25D, 0.0D);
+	public static final AxisAlignedBB COMPUTER_N = new AxisAlignedBB(0.0D, 0.0D, 1.0D, 1.0D, 1.0D, 0.0D);
+    public static final AxisAlignedBB COMPUTER_E = new AxisAlignedBB(1.0D, 0.0D, 0.0D, 0.0D, 1.0D, 1.0D);
+    public static final AxisAlignedBB COMPUTER_W = new AxisAlignedBB(1.0D, 0.0D, 0.0D, 0.0D, 1.0D, 1.0D);
+    public static final AxisAlignedBB COMPUTER_S = new AxisAlignedBB(0.0D, 0.0D, 1.0D, 1.0D, 1.0D, 0.0D);
     
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 	{
 		this.setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.SOUTH));
 	}
 			
-	public Computer(String name, Material material)
+	public computer(String name, Material material)
 	{
 		super(name, material);
 		setUnlocalizedName(name);
@@ -60,13 +61,13 @@ public class Computer extends BlockBase
 		@Override
 		public int getMetaFromState(IBlockState state) 
 	    {
-			return state.getValue(FACING).getIndex();
+			return ((EnumFacing) state.getValue(FACING)).getIndex();
 	    }
 
 	    @Override
 		protected BlockStateContainer createBlockState() 
 	    {
-	    	return new BlockStateContainer(this, FACING);
+	    	return new BlockStateContainer(this, new IProperty[]{FACING});
 	    }
 
 	    @Override
@@ -83,7 +84,7 @@ public class Computer extends BlockBase
 		@Override
 		public boolean canPlaceBlockAt(World worldIn, BlockPos pos) 
 		{
-			return super.canPlaceBlockAt(worldIn, pos) && this.canBlockStay(worldIn, pos);
+			return super.canPlaceBlockAt(worldIn, pos) ? this.canBlockStay(worldIn, pos) : false;
 		}
 		
 		@Override
@@ -123,7 +124,7 @@ public class Computer extends BlockBase
 		@Override
 		public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) 
 		{
-			switch(state.getValue(FACING))
+			switch(((EnumFacing)state.getValue(FACING)))
 	        {
 	            case NORTH:
 	            default:
@@ -140,7 +141,7 @@ public class Computer extends BlockBase
 	@Override	
 	public void registerModels() 
 	{
-		ClientProxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		BadaDevicesMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
 	}
 	
 }
