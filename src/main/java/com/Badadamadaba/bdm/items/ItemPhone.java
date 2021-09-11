@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 
 public class ItemPhone extends ItemBase
 {
-	//ItemCasedPhone extends ItemPhone which means both activate the gui I'm so fucking happy. Now to figure out how to make the gui.
+
 	public ItemPhone(String registryName) 
 	{
 		super(registryName);
@@ -28,4 +28,3 @@ public class ItemPhone extends ItemBase
 		return new ActionResult<>(EnumActionResult.SUCCESS, player.getHeldItem(hand));
 	}
 }
-

@@ -2,10 +2,8 @@ package com.Badadamadaba.bdm.items;
 
 import com.Badadamadaba.bdm.util.CasedphoneUtil;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
 import net.minecraft.client.renderer.color.IItemColor;
 
 public class ItemCasedphone extends ItemPhone
