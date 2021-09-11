@@ -1,13 +1,16 @@
 package com.Badadamadaba.bdm.blocks;
 
 import com.Badadamadaba.bdm.BadaDevicesMod;
-import com.Badadamadaba.bdm.proxy.ClientProxy;
+import com.Badadamadaba.bdm.init.ModBlocks;
+import com.Badadamadaba.bdm.init.ModItems;
+import com.Badadamadaba.bdm.util.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 
-public class BlockBase extends Block
+public class BlockBase extends Block implements IHasModel
 {
 	public BlockBase(String name, Material material)
 	{
@@ -15,15 +18,14 @@ public class BlockBase extends Block
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(BadaDevicesMod.BADADEVICESMODTAB);
+		
+		ModBlocks.BLOCKS.add(this);
+		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
-	public Block setRegistryName(){
-		return setRegistryName(getUnlocalizedName().substring(5));
-	}
-
-
+	@Override
 	public void registerModels() 
 	{
-		ClientProxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		BadaDevicesMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
 	}
 }

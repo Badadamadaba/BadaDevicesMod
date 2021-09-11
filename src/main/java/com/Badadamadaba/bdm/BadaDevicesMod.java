@@ -30,6 +30,7 @@ public class BadaDevicesMod {
 	{
 		proxy.preInit();
 	}
+  
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
@@ -37,6 +38,7 @@ public class BadaDevicesMod {
 		ModRecipes.init();
 	}
 	@EventHandler
+
 	public static void postInit(FMLPostInitializationEvent event)
 	{
 

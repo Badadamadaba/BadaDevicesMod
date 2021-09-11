@@ -11,7 +11,7 @@ public class CasedphoneUtil
 	{
 		NBTTagCompound tag = new NBTTagCompound();
 	
-		tag.setString("cased", dye.getName());
+		tag.setString("Cased", dye.getName());
 		
 		stack.setTagCompound(tag);
 		
@@ -22,9 +22,9 @@ public class CasedphoneUtil
 	{
 		if(stack.hasTagCompound())
 		{
-			if(stack.getTagCompound().hasKey("cased"))
+			if(stack.getTagCompound().hasKey("Cased"))
 			{
-				return stack.getTagCompound().getString("cased");
+				return stack.getTagCompound().getString("Cased");
 			}
 		}
 		return "white";
@@ -34,8 +34,8 @@ public class CasedphoneUtil
 	{
 	  if(!to.hasTagCompound())
 	    to.setTagCompound(new NBTTagCompound());
-	  if(from.hasTagCompound() && from.getTagCompound().hasKey("cased"))
-	    to.getTagCompound().setString("cased", to.getTagCompound().getString("cased"));
+	  if(from.hasTagCompound() && from.getTagCompound().hasKey("Cased"))
+	    to.getTagCompound().setString("Cased", to.getTagCompound().getString("Cased"));
 	  return to;
 	}
 }

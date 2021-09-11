@@ -9,7 +9,7 @@ public class BDMTab extends CreativeTabs
 {
 	public BDMTab (String label)
 	{
-		super("bdmtab");
+		super("badadevicesmodtab");
 	}
 	
 	@Override

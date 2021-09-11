@@ -3,13 +3,13 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "bdm:blocks/monitor",
-		"1": "bdm:blocks/computer_ east",
-		"2": "bdm:blocks/computer_ north",
-		"3": "bdm:blocks/computer_ south",
-		"4": "bdm:blocks/computer_ up",
-		"5": "bdm:blocks/computer_ west",
-		"particle": "bdm:blocks/computer_ down",
-		"1_0": "bdm:blocks/computer_ down"
+		"1": "bdm:blocks/computer_east",
+		"2": "bdm:blocks/computer_north",
+		"3": "bdm:blocks/computer_south",
+		"4": "bdm:blocks/computer_up",
+		"5": "bdm:blocks/computer_west",
+		"particle": "bdm:blocks/computer_down",
+		"1_0": "bdm:blocks/computer_down"
 	},
 	"elements": [
 		{

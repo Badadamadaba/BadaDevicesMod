@@ -30,7 +30,7 @@ public class ItemCasedphone extends ItemPhone
 		}
 	}*/
 	public EnumDyeColor getColor() {return color;}
-	
+
 	@Override
 	public String getUnlocalizedName(ItemStack stack)
 	{
@@ -48,4 +48,3 @@ public class ItemCasedphone extends ItemPhone
 		}
 	}
 }
-

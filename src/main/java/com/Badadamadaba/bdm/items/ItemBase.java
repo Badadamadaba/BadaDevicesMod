@@ -1,25 +1,26 @@
 package com.Badadamadaba.bdm.items;
 
 import com.Badadamadaba.bdm.BadaDevicesMod;
-import com.Badadamadaba.bdm.proxy.ClientProxy;
+import com.Badadamadaba.bdm.init.ModItems;
+import com.Badadamadaba.bdm.util.IHasModel;
 
 import net.minecraft.item.Item;
 
-public class ItemBase extends Item {
+public class ItemBase extends Item implements IHasModel {
 
 	public ItemBase(String name)
 	{
 		setUnlocalizedName(name);
+		setRegistryName(name);
 		setCreativeTab(BadaDevicesMod.BADADEVICESMODTAB);
+		
+		ModItems.ITEMS.add(this);
 	}
-
-	public Item setRegistryName(){
-		return setRegistryName(getUnlocalizedName().substring(5));
-	}
-
+	
+	@Override
 	public void registerModels() 
 	{
-		ClientProxy.registerItemRenderer(this, 0, "inventory");
+		BadaDevicesMod.proxy.registerItemRenderer(this, 0, "inventory");
 	}
 
 }
