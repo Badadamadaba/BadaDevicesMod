@@ -4,7 +4,7 @@ import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 
-public class CasedphoneUtil 
+public class CasedphoneUtil
 {
 	
 	public static ItemStack createDye(ItemStack stack, EnumDyeColor dye)

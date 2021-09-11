@@ -15,5 +15,4 @@ public class ModBlocks
 	
 	public static final Block COMPUTER = new computer("computer", Material.IRON);
 	public static final Block SERVER = new BlockBase("server", Material.IRON);
-	
 }

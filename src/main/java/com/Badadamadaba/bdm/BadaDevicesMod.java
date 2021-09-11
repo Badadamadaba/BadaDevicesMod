@@ -24,12 +24,13 @@ public class BadaDevicesMod {
 	public static CommonProxy proxy;
 	
 	public static final CreativeTabs BADADEVICESMODTAB = new BDMTab("BadaDeviceTab");
-	
+
 	@EventHandler
-	public static void PreInit(FMLPreInitializationEvent event)
+	public static void preInit(FMLPreInitializationEvent event)
 	{
-		
+		proxy.preInit();
 	}
+  
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
@@ -37,9 +38,10 @@ public class BadaDevicesMod {
 		ModRecipes.init();
 	}
 	@EventHandler
-	public static void PostInit(FMLPostInitializationEvent event)
+
+	public static void postInit(FMLPostInitializationEvent event)
 	{
-		
+
 	}
 
 }

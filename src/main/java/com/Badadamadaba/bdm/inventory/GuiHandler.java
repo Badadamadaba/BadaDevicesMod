@@ -23,7 +23,7 @@ public class GuiHandler implements IGuiHandler {
 	}
 
 	@Override
-	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
+	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) 
 		TileEntity tile = null;
 		if (GuiDevice.values()[ID].checkTileEntity) {
 			tile = (TileEntity) world.getTileEntity(new BlockPos(x, y, z));
