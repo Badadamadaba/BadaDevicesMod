@@ -1,7 +1,5 @@
 package com.Badadamadaba.bdm.items;
 
-import com.Badadamadaba.bdm.util.CasedphoneUtil;
-
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.client.renderer.color.IItemColor;
@@ -28,12 +26,6 @@ public class ItemCasedphone extends ItemPhone
 		}
 	}*/
 	public EnumDyeColor getColor() {return color;}
-
-	@Override
-	public String getUnlocalizedName(ItemStack stack)
-	{
-		return super.getUnlocalizedName(stack) + "." + CasedphoneUtil.getRegistryNameFromNBT(stack);
-	}
 
 	public static class phoneColorHandler implements IItemColor {
 		@Override

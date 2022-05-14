@@ -30,7 +30,7 @@ public class ModItems
 	
 	public static final Item PHONE = new ItemPhone("phone");
 	public static ItemCasedphone[] casedPhones = new ItemCasedphone[] {
-			new ItemCasedphone("casedphone_red").setColor(EnumDyeColor.RED),
+			new ItemCasedphone("casedphone_white").setColor(EnumDyeColor.WHITE),
 			new ItemCasedphone("casedphone_blue").setColor(EnumDyeColor.BLUE),
 			new ItemCasedphone("casedphone_green").setColor(EnumDyeColor.GREEN),
 			new ItemCasedphone("casedphone_black").setColor(EnumDyeColor.BLACK),
@@ -44,7 +44,7 @@ public class ModItems
 			new ItemCasedphone("casedphone_gray").setColor(EnumDyeColor.GRAY),
 			new ItemCasedphone("casedphone_silver").setColor(EnumDyeColor.SILVER),
 			new ItemCasedphone("casedphone_cyan").setColor(EnumDyeColor.CYAN),
-			new ItemCasedphone("casedphone_white").setColor(EnumDyeColor.WHITE),
+			new ItemCasedphone("casedphone_red").setColor(EnumDyeColor.RED),
 			new ItemCasedphone("casedphone_purple").setColor(EnumDyeColor.PURPLE)
 	};
 	public static final Item PHONECASE = new ItemNBTPhonecase();

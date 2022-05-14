@@ -4,22 +4,22 @@ item.key.name=Key
 item.metal_sheet.name=Metal sheet
 item.plastic_sheet.name=Plastic sheet
 item.phone.name=Phone
-item.casedphone_white.white.name=White Phone
-item.casedphone_silver.white.name=Silver Phone
-item.casedphone_gray.white.name=Gray Phone
-item.casedphone_black.white.name=Black Phone
-item.casedphone_pink.white.name=Pink Phone
-item.casedphone_red.white.name=Red Phone
-item.casedphone_brown.white.name=Brown Phone
-item.casedphone_orange.white.name=Orange Phone
-item.casedphone_yellow.white.name=Yellow Phone
-item.casedphone_lime.white.name=Lime Phone
-item.casedphone_green.white.name=Green Phone
-item.casedphone_cyan.white.name=Cyan Phone
-item.casedphone_light_blue.white.name=Light Blue Phone
-item.casedphone_blue.white.name=Blue Phone
-item.casedphone_purple.white.name=Purple Phone
-item.casedphone_magenta.white.name=Magenta Phone
+item.casedphone_white.name=White Phone
+item.casedphone_silver.name=Silver Phone
+item.casedphone_gray.name=Gray Phone
+item.casedphone_black.name=Black Phone
+item.casedphone_pink.name=Pink Phone
+item.casedphone_red.name=Red Phone
+item.casedphone_brown.name=Brown Phone
+item.casedphone_orange.name=Orange Phone
+item.casedphone_yellow.name=Yellow Phone
+item.casedphone_lime.name=Lime Phone
+item.casedphone_green.name=Green Phone
+item.casedphone_cyan.name=Cyan Phone
+item.casedphone_light_blue.name=Light Blue Phone
+item.casedphone_blue.name=Blue Phone
+item.casedphone_purple.name=Purple Phone
+item.casedphone_magenta.name=Magenta Phone
 item.itemphonecase.white.name=White Phone Case
 item.itemphonecase.silver.name=Silver Phone Case
 item.itemphonecase.gray.name=Gray Phone Case
@@ -42,7 +42,6 @@ item.mouse.name=Computer Mouse
 
 #Blocks
 tile.computer.name=Computer
-tile.server.name=Server
 
 #Tabs
 itemGroup.badadevicesmodtab=Bada Devices Mod

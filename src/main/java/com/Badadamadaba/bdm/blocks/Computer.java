@@ -23,10 +23,10 @@ import net.minecraft.world.World;
 
 public class computer extends BlockBase
 {
-	public static final AxisAlignedBB COMPUTER_N = new AxisAlignedBB(0.0D, 0.0D, 1.0D, 1.0D, 1.0D, 0.0D);
-    public static final AxisAlignedBB COMPUTER_E = new AxisAlignedBB(1.0D, 0.0D, 0.0D, 0.0D, 1.0D, 1.0D);
-    public static final AxisAlignedBB COMPUTER_W = new AxisAlignedBB(1.0D, 0.0D, 0.0D, 0.0D, 1.0D, 1.0D);
-    public static final AxisAlignedBB COMPUTER_S = new AxisAlignedBB(0.0D, 0.0D, 1.0D, 1.0D, 1.0D, 0.0D);
+	public static final AxisAlignedBB COMPUTER_N = new AxisAlignedBB(0.0D, 0.0D, 1.0D, 1.0D, 0.25D, 0.0D);
+    public static final AxisAlignedBB COMPUTER_E = new AxisAlignedBB(1.0D, 0.0D, 0.0D, 0.0D, 0.25D, 1.0D);
+    public static final AxisAlignedBB COMPUTER_W = new AxisAlignedBB(1.0D, 0.0D, 0.0D, 0.0D, 0.25D, 1.0D);
+    public static final AxisAlignedBB COMPUTER_S = new AxisAlignedBB(0.0D, 0.0D, 1.0D, 1.0D, 0.25D, 0.0D);
     
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 	{
